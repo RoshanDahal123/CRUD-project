@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Operations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table class="container">
+      <tr>
+        <td>
+          <form id="form-control" autocomplete="off" onsubmit="event.preventDefault();onFormSubmit();">
+            <div>
+              <label for="name">Enter the Full Name Of the Student</label><label class="validation-error hide" id="nameValidationError">This field is required.</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <label for="ID">Enter the student Id</label>
+              <input type="number" name="ID" id="ID" />
+            </div>
+            <div>
+              <label for="Faculty">Enter the faculty of the student</label>
+              <input type="text" name="Faculty" id="Faculty" />
+            </div>
+            <div>
+              <label for="Section">Enter the Section Of the Student</label>
+              <input type="text" name="Section" id="Section" />
+            </div>
+            <div class="form-action-buttons">
+              <input type="submit" />
+            </div>
+          </form>
+        </td>
+
+        <td>
+          <table class="list" id="StudentList">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>StuhentID</th>
+                <th>Faculty</th>
+                <th>Section</th>
+              </tr>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
